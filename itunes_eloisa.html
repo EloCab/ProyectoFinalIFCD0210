@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITUNES WEB</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <script src="javascript/buscador.js"></script>
+</head>
+    
+<body>
+    <div>
+        <h2>BUSCADOR DE ITUNES</h2>&nbsp;&nbsp;&nbsp;<img id="logo" src="imagenes/itunes.jpg">
+        <input type="text" id="busqueda" placeholder="Introduce el tema, artista o grupo a buscar..." /><br />
+        <input type="button" onclick="buscarCanciones()" id="btnBuscar" value="BUSCAR" >
+        &nbsp;&nbsp;&nbsp;
+        <input type="button" onclick="ordenarCanciones()" id="btnOrdenar" value="ORDENAR" >
+        &nbsp;&nbsp;&nbsp;
+        <input type="button" onclick="LimpiarDatos()" id="btnLimpiar" value="LIMPIAR"  /><br />
+    </div>
+    <!-- HOOK PARA RESULTADOS DE BÚSQUEDA -->
+    <table id="tablaCanciones"></table>
+</body>
+</html>
